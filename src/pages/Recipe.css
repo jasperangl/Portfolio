@@ -1,0 +1,85 @@
+@import url('https://fonts.googleapis.com/css?family=Montserrat:500&display=swap');
+
+
+/* CSS for Recipe site and recipe components
+*/
+.App {
+    min-height: 100px;
+    background-color: var(--theme-color);
+}
+
+.search-form{
+    min-height: 10vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.search-bar {
+    width: 50%;
+    border: none;
+    padding: 10px;
+}
+
+.search-button {
+    background: #333;
+    border: none;
+    padding: 10px 20px;
+    color: white; 
+
+}
+
+
+/*Recipe Components
+*/
+
+.recipe-header {
+    font-family: "Montserrat", sans-serif;
+    font-weight: 500;
+    font-size: 22px;
+    padding: 10px 10%;
+    text-align: center;
+    color: whitesmoke;
+
+}
+
+.recipe-title {
+    display: flex;
+    color: #333;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 10%;
+}
+
+.recipe-ingredient {
+    list-style-type: circle;
+    color: #333;
+}
+
+.recipe-img {
+    border-radius: 50%;
+    width: 200px;
+    height: 200px;
+
+}
+
+.recipes {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.recipe-box {
+    background-color: whitesmoke;
+    padding: 7% ;
+    min-height: 300px;
+    border-radius: 10px;
+    box-shadow: 0px 5px 20px rgb(70,70,70);
+    margin: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    min-width: 31%;
+    max-width: 80%;
+}
