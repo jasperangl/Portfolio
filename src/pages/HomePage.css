@@ -6,13 +6,14 @@
 }
 
 .intro {
-    background-image: url('../images/Boston_Back_Bay_reflection.jpg');
+    background-image: url('../images/Boston_Back_Bay_reflection_darker.jpg');
     background-size: cover;
     background-position-x: right;
     background-position-y: top;
     background-repeat: no-repeat;
     height: 600px;
     max-height: 700px;
+    
 }
 
 .intro-div {
@@ -47,7 +48,7 @@
  }
 
  .start-buttons {
-     max-width: 400px;
+     max-width: 500px;
      margin-right: auto;
      margin-left: auto;
      list-style-type: none;
@@ -63,13 +64,14 @@
     font-family: "Montserrat", sans-serif;
     font-weight: 500;
     font-size: 20px;
+    font-size: calc(60% + 1vw);;
     border-radius: 8px;
-    border: 1.6px solid var(--theme-color);
+    border: 2px solid var(--theme-color);
  }
 
  .contact-button:hover{
      background-color: var(--theme-color);
-     border: 1px solid var(--theme-color);
+     border: 2px solid var(--theme-color);
      transition-duration: 0.5s; 
 }
 
@@ -77,7 +79,7 @@
     color: white;
     text-decoration: none;
     display: inline-block;
-    padding: 12px 25px;
+    padding: 12px 20px;
  }
 
 .contact-button a:hover {

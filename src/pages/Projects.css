@@ -15,6 +15,10 @@
     text-align: right!important;
 }
 
+.section-title {
+    padding-bottom: 5%;
+}
+
 .projects .section-title h1{
     font-weight: 500;
 }
@@ -29,16 +33,16 @@
     display: flex;
     flex-wrap: wrap;
     justify-content: space-around;
-    
-
 }
 
 .projects .project-content .box{
     min-width: 250px;
-    padding: 30px 8px;
+    padding: 30px 5px;
     background-color: white;
-    flex: 0 0 calc(33.33% - 20px);
-    max-width: calc(33.33% - 20px);
+    flex: 0 0 calc(35.33% - 40px);
+    max-width: calc(35.33% - 20px);
+    margin-right: 10px;
+    margin-left: 10px;
     margin-bottom: 30px;
     border: 1px solid #eeeeee;
     text-align: center;
@@ -61,7 +65,7 @@
 }
 
 .projects .project-content .box p {
-    color: #6b6a6a;
+    color: #616161;
     font-size: 15px;
     line-height: 24px;
     font-weight: 400;
@@ -95,6 +99,7 @@
 }
 
 .projects .project-content .box .project-button {
+    font-family: "Montserrat", sans-serif;
     display: flex;
     flex-direction: column;
     background-color: white;
@@ -102,6 +107,7 @@
     font-size: 10px;
     border-radius: 8px;
     border: 1px solid var(--theme-color);
+    cursor: pointer;
  }
 
  .projects .project-content .box .project-button:hover{
@@ -115,9 +121,68 @@
     text-decoration: none;
     display: inline-block;
     padding: 8px 12px;
+    
  }
 
  .projects .project-content .box .project-button a:hover {
     color: white;
     transition-duration: 0.3s;
  }
+
+ .ship-game {
+     height: 400px;
+     width: 600px;
+     background-color: green;
+ }
+
+ .project-language {
+    font-family: "Montserrat", sans-serif;
+    font-weight: 500;
+    font-size: 15px;
+    padding-top: 5%;
+    text-align: center;
+    color: rgb(27, 27, 27);
+ }
+
+ .project-date {
+    font-family: "Montserrat", sans-serif;
+    font-weight: 500;
+    font-size: 14px;
+    padding-top: 5%;
+    text-align: center;
+    color: #333;
+ }
+
+.preview {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    background: rgba(0,0,0,0.8);
+    max-width: 1000px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.close {
+    position: fixed;
+    top: 40px;
+    right: 40px;
+    cursor: pointer;
+    max-width: 35px;
+    filter: invert(1);
+}
+
+@media (max-width : 1300px) {
+    .preview {
+       max-width: 80%;
+   }
+}
+
+@media (max-width : 1000px) {
+    .preview {
+       max-width: 90%;
+   }
+}
+

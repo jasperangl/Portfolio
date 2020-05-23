@@ -6,7 +6,7 @@
     background-color: #333;
     justify-content: space-between;
     align-items: center;
-    padding: 10px 10%;
+    padding: 5px 5%;
   }
   
 .navbar-ul {
@@ -22,7 +22,6 @@
     font-weight: 500;
     font-size: 16px;
     color: #ecf0f1;
-    text-decoration: none;
     float: left;
 }
   
@@ -43,15 +42,70 @@
     background-color: var(--theme-color);
 }
 
-
   
 .logo {
+    flex-shrink: 0;
+    max-height: 10vh;
+}
+
+.open-menu-btn {
+    float: right;
+    color: white;
+    font-size: 35px; 
+    display: none;
     cursor: pointer;
 }
-  
-.nav_links {
-    list-style: none;
-    display: inline-block;
-    padding: 0px 20px;
-    transition: all 0.3s ease 0s;
+
+.close-btn {
+    display: none;
+    font-size: 50px;
+    cursor: pointer;
+    color: white;
 }
+
+.close-btn:hover, .open-menu-btn:hover {
+    transition: 0.2s;
+    color: var(--theme-color);
+}
+
+#chk {
+    position: absolute;
+    visibility: hidden;
+}
+
+@media screen and (max-width: 530px) {
+    .close-btn {
+        display: block;
+        position: absolute;
+        top: 40px;
+        right: 40px;
+    }
+
+    .open-menu-btn{
+        display: block;
+    }
+
+    .navbar-ul {
+        position: fixed;
+        width: 100%;
+        height: 100vh;
+        left: 100vh;
+        right: 0;
+        top: 0;
+        padding: 80px;
+        line-height: normal;
+        transition: 0.7s;
+    }
+    .navbar-li {
+      padding: 10px;  
+      float: none;
+      display: block;
+    }
+
+    #chk:checked ~ .navbar-ul {
+        left: 0;
+    }
+
+    
+
+  }

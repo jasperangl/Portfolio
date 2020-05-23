@@ -1,91 +1,164 @@
-import React from 'react';
+import React, {useState} from 'react';
+import Modal from 'react-modal';
 import './Projects.css';
 import './About.css';
 
+Modal.setAppElement('#root')
+
 // A Recipe Page
 const Projects = () => {
+
+    const [modelIsOpen, setModalIsOpen] = useState(false)
+    const [clipName, setClipName] = useState('Pen');
+
+    function setName(name) {
+        setClipName(name);
+    }
+
+    function setModalMode(bool) {
+        setModalIsOpen(bool);
+    }
+
+
     return(
-        <section className='projects'>
+        
+        <section id='Projects' className='projects'>
+            <link rel="stylesheet" 
+                href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"/>
+        
             <div className='container'>
                 <div className='section-title text-center'>
                     <h1>MY PROJECTS</h1>
-                    <h6>Hello</h6>
                 </div>
+
+                {/* This is the Video Modal that opens on button click */}
+                <Modal 
+                    isOpen={modelIsOpen} 
+                    onRequestClose={() => setModalIsOpen(false)}
+                    style={
+                        {
+                            overlay: {
+                                backgroundColor: 'rgba(102, 102, 102, 0.75)'
+                            },
+
+                            content: {
+                                background: 'null',
+                                border: 'null'
+                            }                            
+                        }
+                    }>
+                    <video class='preview'src={clipName} controls='true'></video>
+                    <div>
+                        <img onClick={() => setModalIsOpen(false)} className='close' src='images/close.svg'></img>
+                    </div>
+                </Modal>
+
                 <div className='project-content'>
                     <div className='box'>
                         <div className='symbol'>
-                            <i class='fa fa fa-laptop'/>
+                            <i class='fa fa-file-excel-o'/>
                         </div>
                         <h5 className='project-name'>Spreadsheet</h5>
-                        <p>Explains what language project is written in,
-                             what has been accomplished with project and how
-                             did I accomplish it.
+                        <p>A spreadsheet application similar to Excel 
+                            with the ability to store information in Cells and execute computations on them.
+                            Data can be saved, stored, opened or visualized in a graph. 
                         </p>
                         <ul className="projects-ul" class="nav_links">
-                            <li className="project-button"><a target='_blank' href="https://github.com/jasperangl">Source Code</a></li>
-                            <li className="project-button"><a target='_blank' href="https://github.com/jasperangl">Live Version</a></li>
+                            <li className="project-button"><a target='_blank' href="https://github.com/jasperangl/Spreadsheet">Source Code</a></li>
+                            <li className="project-button"><a target='_blank' onClick={function() { setName("images/Spreadsheet-final.mp4"); setModalMode(true)}}>Video Presentation</a></li>
                         </ul>
+                        <h6 className='project-language'>Java</h6>
+                        <h6 className='project-date'>Nov - Dec 2019</h6>
+                        
                     </div>
                     <div className='box'>
                         <div className='symbol'>
-                            <i class='fa fa fa-code'/>
+                            <i class='fa fa-gamepad'/>
                         </div>
-                        <h5 className='project-name'>Craigslist housing Scraper</h5>
-                        <p>Explains what language project is written in,
-                             what has been accomplished with project and how
-                             did I accomplish it.
+                        <h5 className='project-name'>Ships Game</h5>
+                        <p>First Java Game programmed using only recursion and no for-loops.
+                             Goal is to shoot as many flying ships as possible with the given bullets.
+
                         </p>
                         <ul className="projects-ul" class="nav_links">
-                            <li className="project-button"><a target='_blank' href="https://github.com/jasperangl">Source Code</a></li>
-                            <li className="project-button"><a target='_blank' href="https://github.com/jasperangl">Live Version</a></li>
+                            <li className="project-button"><a target='_blank' href="https://github.com/jasperangl/10-Bullets-Game">Source Code</a></li>
+                            <li className="project-button"><a target='_blank' onClick={function() { setName("images/ShipGame.mp4"); setModalMode(true)}}>Video Presentation</a></li>
                         </ul>
+                        <h6 className='project-language'>Java</h6>
+                        <h6 className='project-date'>Feb 2019</h6>
                     </div>
                     <div className='box'>
                         <div className='symbol'>
-                            <i class='fa fa fa-mobile'/>
+                            <i class='fa fa-database'/>
+                        </div>
+                        <h5 className='project-name'>Recipe Database</h5>
+                        <p>A small javascript projects on this website that allows you to search through a seemingly infinite amount of different recipes.
+                        </p>
+                        <div className='project-bottom'>
+                            <ul className="projects-ul" class="nav_links">
+                                <li className="project-button"><a target='_blank' href="/Recipes">Live Version</a></li>
+                            </ul>
+                            <h6 className='project-language'>Javascript</h6>
+                            <h6 className='project-date'>Feb 2020</h6>
+                        </div>
+                    </div>
+                    <div className='box'>
+                        <div className='symbol'>
+                            <i class='fa fa-gamepad'/>
                         </div>
                         <h5 className='project-name'>Pyramid Solitaire</h5>
-                        <p>Explains what language project is written in,
-                             what has been accomplished with project and how
-                             did I accomplish it.
+                        <p>A textual Java card game with two game modes, 
+                            sophisticated testing and applied MVC Pattern.
                         </p>
-                        <ul className="projects-ul" class="nav_links">
-                            <li className="project-button"><a target='_blank' href="https://github.com/jasperangl">Source Code</a></li>
-                            <li className="project-button"><a target='_blank' href="https://github.com/jasperangl">Live Version</a></li>
-                        </ul>
+                        <div className='project - bottom'>
+                            <ul className="projects-ul" class="nav_links">
+                                <li className="project-button"><a target='_blank' href="https://github.com/jasperangl/Pyramid-Solitaire">Source Code</a></li>
+                                <li className="project-button"><a target='_blank' onClick={function() { setName("images/Pyramidsolitaire-final.mp4"); setModalMode(true)}}>Video Presentation</a></li>
+                            </ul>
+                            <h6 className='project-language'>Java</h6>
+                            <h6 className='project-date'> Oct - Nov 2019</h6>
+                        </div>
                     </div>
                     <div className='box'>
                         <div className='symbol'>
-                            <i class='fa fa fa-laptop'/>
+                            <i class='fa fa-gamepad'/>
                         </div>
                         <h5 className='project-name'>Minesweeper</h5>
-                        <p>Explains what language project is written in,
-                             what has been accomplished with project and how
-                             did I accomplish it.
+                        <p>The classic Minesweeper game programmed with Java. 
+                            
                         </p>
-                        <ul className="projects-ul" class="nav_links">
-                            <li className="project-button"><a target='_blank' href="https://github.com/jasperangl">Source Code</a></li>
-                            <li className="project-button"><a target='_blank' href="https://github.com/jasperangl">Live Version</a></li>
-                        </ul>
+                        <div className='project-bottom'>
+                            <ul className="projects-ul" class="nav_links">
+                                <li className="project-button"><a target='_blank' href="https://github.com/jasperangl/Minesweeper">Source Code</a></li>
+                                <li className="project-button"><a target='_blank' onClick={function() { setName("images/Minesweeper.mp4"); setModalMode(true)}}>Video Presentation</a></li>
+                            </ul>
+                            <h6 className='project-language'>Java</h6>
+                            <h6 className='project-date'>March 2019</h6>
+                        </div>
                     </div>
+                    
                     <div className='box'>
                         <div className='symbol'>
                             <i class='fa fa fa-search'/>
                         </div>
-                        <h5 className='project-name'>Ships Game</h5>
-                        <p>Explains what language project is written in,
-                             what has been accomplished with project and how
-                             did I accomplish it.
+                        <h5 className='project-name'>Craigslist housing Scraper</h5>
+                        <p>My first Python program that scrapes housing data from Craigslist housing and exports data to a CSV-File.
                         </p>
-                        <ul className="projects-ul" class="nav_links">
-                            <li className="project-button"><a target='_blank' href="https://github.com/jasperangl">Source Code</a></li>
-                            <li className="project-button"><a target='_blank' href="https://github.com/jasperangl">Live Version</a></li>
-                        </ul>
+                        <div className='project-bottom'>
+                            <ul className="projects-ul" class="nav_links">
+                                <li className="project-button"><a target='_blank' href="https://github.com/jasperangl/Craigslist-housing-scraper">Source Code</a></li>
+                            </ul>
+                            <h6 className='project-language'>Python</h6>
+                            <h6 className='project-date'>Jan 2020</h6>
+                        </div>
                     </div>
                 </div>
-            </div>
+            </div>            
         </section>
     )
+    
 }
+
+
 
 export default Projects;

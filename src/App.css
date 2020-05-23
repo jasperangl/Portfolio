@@ -3,27 +3,18 @@
 /* Global Variables */
 
 :root {
-  --theme-color: rgb(124, 55, 214);
+  --theme-color: rgb(69, 162, 158);
+}
+
+html {
+  scroll-behavior: smooth;
 }
 
 
 .app {
-min-height: 100vh;
-background-color: var(--theme-color);
 display: flex;
 justify-content: space-around;
 align-items: center;
-}
-
-.tweet {
-  height: 300px;
-  width: 200px;
-  border-radius: 30px;
-  background-color: white;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-around;
-  align-items: center;
 }
 
 .red{

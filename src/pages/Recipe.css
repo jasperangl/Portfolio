@@ -3,30 +3,36 @@
 
 /* CSS for Recipe site and recipe components
 */
-.App {
-    min-height: 100px;
+.recipe-App {
+    padding-top: 20px;
     background-color: var(--theme-color);
 }
 
 .search-form{
-    min-height: 10vh;
+    min-height: 15vh;
     display: flex;
     justify-content: center;
     align-items: center;
+    
 }
 
-.search-bar {
-    width: 50%;
-    border: none;
-    padding: 10px;
-}
 
 .search-button {
     background: #333;
     border: none;
-    padding: 10px 20px;
+    padding: 13px 20px;
     color: white; 
+    border-radius: 6px;
+    cursor: pointer;
+    margin:10px;
+}
 
+.search-button:hover {
+    transition: 0.4s;
+    background-color: rgb(97, 189, 35);
+
+   
+    
 }
 
 

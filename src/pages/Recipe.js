@@ -39,10 +39,10 @@ const Recipes = () => {
     }
 
     return(
-        <div className="App">
+        <div className="recipe-App">
             <h3 className='recipe-header'>This is a search machine for any recipe you want</h3>
             <form onSubmit={getSearch} className="search-form">
-                <input className="search-bar" type="text" value={search} onChange={updateSearch}/>
+                <input type='text' className="search-bar" type="text" placeholder='Your favorite recipe...'value={search} onChange={updateSearch}/>
                 <button className="search-button" type="submit">
                     Search
                 </button>

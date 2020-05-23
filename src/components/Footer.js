@@ -24,7 +24,7 @@ const Footer = () => {
                 </div>
                 <div className='Contact'>
                 <i class="fa fa-phone menu" ></i>
-                <p> (+1) 646 239-0871</p>
+                <p><a href="tel:6462390871">(+1) 646 239-0871</a></p>
                 </div>
                 <div className='Contact'>
                 <i class="fa fa-envelope menu"></i>
@@ -35,10 +35,12 @@ const Footer = () => {
                 <div>
                     <h2> Jasper<span> Angl</span></h2>
                     <p class="menu">
-                    <a href="#"> Home </a> |
-                    <a href="/About"> About </a> |
-                    <a href="/Recipes"> Recipes </a> |
-                    <a href="/Contact"> Contact </a>
+                    <a href="/"> Home </a> | 
+                    <a href="/#About">  About </a> | 
+                    <a href="/#Projects">  Projects </a> | 
+                    <a href="/#Contact">  Contact </a> | 
+                    <a href="/Resume">  Resume </a> 
+                    
                     </p>
                 </div>
                 <div>

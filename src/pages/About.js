@@ -3,7 +3,7 @@ import './About.css';
 
 function About() {
     return(
-    <section className='about-me'>
+    <section id='About'className='about-me'>
         <div className='container'>
             <div className='row'>
                 <div className='section-title'>
@@ -12,7 +12,7 @@ function About() {
                 </div>
             </div>
             <div className='row'>
-                <ul className='about-content'>
+                <ul className='about-content flex-direction'>
                     <li className='profile-img'>
                         <img />
                     </li>
@@ -20,9 +20,10 @@ function About() {
                         <h4>I'm Jasper Angl</h4>
                         <h6>An undergraduate student at <span>Northeastern University</span> studying <span>Computer Science</span> and 
                             <span> Cognitive Psychology</span></h6>
-                        <p> I don't know what to write here yet. I should try to find a sample that
-                            I can copy that has a similar length as the short paragraph that I am currently
-                            writing here and might be a sentence longer than this.
+                        <p>I am a passionate programmer and athlete in the sport of rowing.
+                            Currently I am studying at Northeastern University and am rowing for their Varisty team.
+                            Although I have only started programming in college I already gathered a good amount of experience and my eager to 
+                            learn more about the world of programming is increasing every day.
                         </p>
                         <div class="icons">
                             <a className='icon' target='_blank' href="https://www.linkedin.com/in/jasper-angl/"><i class="fa fa-linkedin"></i></a>
