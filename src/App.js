@@ -7,7 +7,6 @@ import {
 import HomePage from './pages/HomePage';
 import Recipes from './pages/Recipe';
 import NavBar from './components/NavBar';
-import Contact from './pages/Contact';
 import Footer from './components/Footer';
 import Resume from './components/Resume';
 import './App.css';

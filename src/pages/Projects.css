@@ -116,7 +116,7 @@
      transition-duration: 0.3s; 
 }
 
-.projects .project-content .box .project-button a {
+.projects .project-content .box .project-button a, .project-button div{
     color: black;
     text-decoration: none;
     display: inline-block;
@@ -124,7 +124,7 @@
     
  }
 
- .projects .project-content .box .project-button a:hover {
+ .projects .project-content .box .project-button a:hover, .project-button div:hover {
     color: white;
     transition-duration: 0.3s;
  }

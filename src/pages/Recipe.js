@@ -13,17 +13,19 @@ const Recipes = () => {
     const [search, setSearch] = useState('');
     const [query, setQuery] = useState('chicken');
 
+    
     useEffect( () =>{
+        const getRecipes = async () => {
+            const response = await fetch(`https://api.edamam.com/search?q=${query}&app_id=${APP_ID}&app_key=${APP_KEY}`);
+            const data = await response.json(); // formats it
+            setRecipes(data.hits);
+            console.log(data.hits);
+        };
         getRecipes();
     }, [query]);
 
     // gets and sets the recipes from the online resource
-    const getRecipes = async () => {
-        const response = await fetch(`https://api.edamam.com/search?q=${query}&app_id=${APP_ID}&app_key=${APP_KEY}`);
-        const data = await response.json(); // formats it
-        setRecipes(data.hits);
-        console.log(data.hits);
-    }
+    
 
     // updates what we are searching for
     const updateSearch = e => {
@@ -42,7 +44,7 @@ const Recipes = () => {
         <div className="recipe-App">
             <h3 className='recipe-header'>This is a search machine for any recipe you want</h3>
             <form onSubmit={getSearch} className="search-form">
-                <input type='text' className="search-bar" type="text" placeholder='Your favorite recipe...'value={search} onChange={updateSearch}/>
+                <input type='text' className="search-bar" placeholder='Your favorite recipe...' value={search} onChange={updateSearch}/>
                 <button className="search-button" type="submit">
                     Search
                 </button>

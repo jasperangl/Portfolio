@@ -1,6 +1,17 @@
 
+@import "./components/Footer.css";
+@import "./components/NavBar.css";
+@import "./pages/About.css";
+@import "./pages/Contact.css";
+@import "./pages/HomePage.css";
+@import "./pages/Projects.css";
+@import "./pages/Recipe.css";
+@import "./index.css";
+
+
 
 /* Global Variables */
+
 
 :root {
   --theme-color: rgb(69, 162, 158);

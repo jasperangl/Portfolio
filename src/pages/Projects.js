@@ -49,23 +49,23 @@ const Projects = () => {
                     }>
                     <video class='preview'src={clipName} controls='true'></video>
                     <div>
-                        <img onClick={() => setModalIsOpen(false)} className='close' src='images/close.svg'></img>
+                        <img onClick={() => setModalIsOpen(false)} className='close' src='images/close.svg' alt=''></img>
                     </div>
                 </Modal>
 
                 <div className='project-content'>
                     <div className='box'>
                         <div className='symbol'>
-                            <i class='fa fa-file-excel-o'/>
+                            <i className='fa fa-file-excel-o'/>
                         </div>
                         <h5 className='project-name'>Spreadsheet</h5>
                         <p>A spreadsheet application similar to Excel 
                             with the ability to store information in Cells and execute computations on them.
                             Data can be saved, stored, opened or visualized in a graph. 
                         </p>
-                        <ul className="projects-ul" class="nav_links">
-                            <li className="project-button"><a target='_blank' href="https://github.com/jasperangl/Spreadsheet">Source Code</a></li>
-                            <li className="project-button"><a target='_blank' onClick={function() { setName("images/Spreadsheet-final.mp4"); setModalMode(true)}}>Video Presentation</a></li>
+                        <ul>
+                            <li className="project-button"><a target='_blank' rel="noopener noreferrer" href="https://github.com/jasperangl/Spreadsheet">Source Code</a></li>
+                            <li className="project-button"><div onClick={function() { setName("images/Spreadsheet-final.mp4"); setModalMode(true)}}>Video Presentation</div></li>
                         </ul>
                         <h6 className='project-language'>Java</h6>
                         <h6 className='project-date'>Nov - Dec 2019</h6>
@@ -73,30 +73,30 @@ const Projects = () => {
                     </div>
                     <div className='box'>
                         <div className='symbol'>
-                            <i class='fa fa-gamepad'/>
+                            <i className='fa fa-gamepad'/>
                         </div>
                         <h5 className='project-name'>Ships Game</h5>
                         <p>First Java Game programmed using only recursion and no for-loops.
                              Goal is to shoot as many flying ships as possible with the given bullets.
 
                         </p>
-                        <ul className="projects-ul" class="nav_links">
-                            <li className="project-button"><a target='_blank' href="https://github.com/jasperangl/10-Bullets-Game">Source Code</a></li>
-                            <li className="project-button"><a target='_blank' onClick={function() { setName("images/ShipGame.mp4"); setModalMode(true)}}>Video Presentation</a></li>
+                        <ul >
+                            <li className="project-button"><a target='_blank' rel="noopener noreferrer" href="https://github.com/jasperangl/10-Bullets-Game">Source Code</a></li>
+                            <li className="project-button"><div  onClick={function() { setName("images/ShipGame.mp4"); setModalMode(true)}}>Video Presentation</div></li>
                         </ul>
                         <h6 className='project-language'>Java</h6>
                         <h6 className='project-date'>Feb 2019</h6>
                     </div>
                     <div className='box'>
                         <div className='symbol'>
-                            <i class='fa fa-database'/>
+                            <i className='fa fa-database'/>
                         </div>
                         <h5 className='project-name'>Recipe Database</h5>
                         <p>A small javascript projects on this website that allows you to search through a seemingly infinite amount of different recipes.
                         </p>
                         <div className='project-bottom'>
-                            <ul className="projects-ul" class="nav_links">
-                                <li className="project-button"><a target='_blank' href="/Recipes">Live Version</a></li>
+                            <ul>
+                                <li className="project-button"><a target='_blank' rel="noopener noreferrer" href="/Recipes">Live Version</a></li>
                             </ul>
                             <h6 className='project-language'>Javascript</h6>
                             <h6 className='project-date'>Feb 2020</h6>
@@ -104,16 +104,16 @@ const Projects = () => {
                     </div>
                     <div className='box'>
                         <div className='symbol'>
-                            <i class='fa fa-gamepad'/>
+                            <i className='fa fa-gamepad'/>
                         </div>
                         <h5 className='project-name'>Pyramid Solitaire</h5>
                         <p>A textual Java card game with two game modes, 
                             sophisticated testing and applied MVC Pattern.
                         </p>
                         <div className='project - bottom'>
-                            <ul className="projects-ul" class="nav_links">
-                                <li className="project-button"><a target='_blank' href="https://github.com/jasperangl/Pyramid-Solitaire">Source Code</a></li>
-                                <li className="project-button"><a target='_blank' onClick={function() { setName("images/Pyramidsolitaire-final.mp4"); setModalMode(true)}}>Video Presentation</a></li>
+                            <ul>
+                                <li className="project-button"><a target='_blank' rel="noopener noreferrer" href="https://github.com/jasperangl/Pyramid-Solitaire">Source Code</a></li>
+                                <li className="project-button"><div onClick={function() { setName("images/Pyramidsolitaire-final.mp4"); setModalMode(true)}}>Video Presentation</div></li>
                             </ul>
                             <h6 className='project-language'>Java</h6>
                             <h6 className='project-date'> Oct - Nov 2019</h6>
@@ -121,16 +121,16 @@ const Projects = () => {
                     </div>
                     <div className='box'>
                         <div className='symbol'>
-                            <i class='fa fa-gamepad'/>
+                            <i className='fa fa-gamepad'/>
                         </div>
                         <h5 className='project-name'>Minesweeper</h5>
                         <p>The classic Minesweeper game programmed with Java. 
                             
                         </p>
                         <div className='project-bottom'>
-                            <ul className="projects-ul" class="nav_links">
-                                <li className="project-button"><a target='_blank' href="https://github.com/jasperangl/Minesweeper">Source Code</a></li>
-                                <li className="project-button"><a target='_blank' onClick={function() { setName("images/Minesweeper.mp4"); setModalMode(true)}}>Video Presentation</a></li>
+                            <ul>
+                                <li className="project-button"><a target='_blank' rel="noopener noreferrer" href="https://github.com/jasperangl/Minesweeper">Source Code</a></li>
+                                <li className="project-button"><div onClick={function() { setName("images/Minesweeper.mp4"); setModalMode(true)}}>Video Presentation</div></li>
                             </ul>
                             <h6 className='project-language'>Java</h6>
                             <h6 className='project-date'>March 2019</h6>
@@ -139,14 +139,14 @@ const Projects = () => {
                     
                     <div className='box'>
                         <div className='symbol'>
-                            <i class='fa fa fa-search'/>
+                            <i className='fa fa fa-search'/>
                         </div>
                         <h5 className='project-name'>Craigslist housing Scraper</h5>
                         <p>My first Python program that scrapes housing data from Craigslist housing and exports data to a CSV-File.
                         </p>
                         <div className='project-bottom'>
-                            <ul className="projects-ul" class="nav_links">
-                                <li className="project-button"><a target='_blank' href="https://github.com/jasperangl/Craigslist-housing-scraper">Source Code</a></li>
+                            <ul>
+                                <li className="project-button"><a target='_blank' rel="noopener noreferrer" href="https://github.com/jasperangl/Craigslist-housing-scraper">Source Code</a></li>
                             </ul>
                             <h6 className='project-language'>Python</h6>
                             <h6 className='project-date'>Jan 2020</h6>

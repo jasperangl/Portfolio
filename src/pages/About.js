@@ -13,9 +13,7 @@ function About() {
             </div>
             <div className='row'>
                 <ul className='about-content flex-direction'>
-                    <li className='profile-img'>
-                        <img />
-                    </li>
+                    <li className='profile-img'></li>
                     <li className='text'>
                         <h4>I'm Jasper Angl</h4>
                         <h6>An undergraduate student at <span>Northeastern University</span> studying <span>Computer Science</span> and 
@@ -25,11 +23,11 @@ function About() {
                             Although I have only started programming in college I already gathered a good amount of experience and my eager to 
                             learn more about the world of programming is increasing every day.
                         </p>
-                        <div class="icons">
-                            <a className='icon' target='_blank' href="https://www.linkedin.com/in/jasper-angl/"><i class="fa fa-linkedin"></i></a>
-                            <a className='icon' target='_blank' href="https://github.com/jasperangl"><i class="fa fa-github"></i></a>
-                            <a className='icon' target='_blank' href="https://www.instagram.com/jasper.angl/"><i class="fa fa-instagram"></i></a>
-                            <a className='icon' target='_blank' href="https://www.facebook.com/jasper.angl"><i class="fa fa-facebook"></i></a>
+                        <div className="icons">
+                            <a className='icon' target='_blank' rel='noopener noreferrer' href="https://www.linkedin.com/in/jasper-angl/"><i className="fa fa-linkedin"></i></a>
+                            <a className='icon' target='_blank' rel='noopener noreferrer' href="https://github.com/jasperangl"><i className="fa fa-github"></i></a>
+                            <a className='icon' target='_blank' rel='noopener noreferrer' href="https://www.instagram.com/jasper.angl/"><i className="fa fa-instagram"></i></a>
+                            <a className='icon' target='_blank' rel='noopener noreferrer' href="https://www.facebook.com/jasper.angl"><i className="fa fa-facebook"></i></a>
                         </div>
                     </li>
                 </ul>
