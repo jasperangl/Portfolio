@@ -1,17 +1,17 @@
 {
   "files": {
-    "main.css": "/portfolio/static/css/main.d6e7fd11.chunk.css",
-    "main.js": "/portfolio/static/js/main.e30d978d.chunk.js",
-    "main.js.map": "/portfolio/static/js/main.e30d978d.chunk.js.map",
-    "runtime-main.js": "/portfolio/static/js/runtime-main.62348e24.js",
-    "runtime-main.js.map": "/portfolio/static/js/runtime-main.62348e24.js.map",
-    "static/js/2.960ac3f8.chunk.js": "/portfolio/static/js/2.960ac3f8.chunk.js",
-    "static/js/2.960ac3f8.chunk.js.map": "/portfolio/static/js/2.960ac3f8.chunk.js.map",
+    "main.css": "/portfolio/static/css/main.490a06fa.chunk.css",
+    "main.js": "/portfolio/static/js/main.c30bb2eb.chunk.js",
+    "main.js.map": "/portfolio/static/js/main.c30bb2eb.chunk.js.map",
+    "runtime-main.js": "/portfolio/static/js/runtime-main.44087e9b.js",
+    "runtime-main.js.map": "/portfolio/static/js/runtime-main.44087e9b.js.map",
+    "static/js/2.d590ed76.chunk.js": "/portfolio/static/js/2.d590ed76.chunk.js",
+    "static/js/2.d590ed76.chunk.js.map": "/portfolio/static/js/2.d590ed76.chunk.js.map",
     "index.html": "/portfolio/index.html",
-    "precache-manifest.25d14317ff8ac95e3a5e34bff8106b04.js": "/portfolio/precache-manifest.25d14317ff8ac95e3a5e34bff8106b04.js",
+    "precache-manifest.57e27c5912c869c28920a26c955df294.js": "/portfolio/precache-manifest.57e27c5912c869c28920a26c955df294.js",
     "service-worker.js": "/portfolio/service-worker.js",
-    "static/css/main.d6e7fd11.chunk.css.map": "/portfolio/static/css/main.d6e7fd11.chunk.css.map",
-    "static/js/2.960ac3f8.chunk.js.LICENSE": "/portfolio/static/js/2.960ac3f8.chunk.js.LICENSE",
+    "static/css/main.490a06fa.chunk.css.map": "/portfolio/static/css/main.490a06fa.chunk.css.map",
+    "static/js/2.d590ed76.chunk.js.LICENSE": "/portfolio/static/js/2.d590ed76.chunk.js.LICENSE",
     "static/media/App.css": "/portfolio/static/media/Profilbild-min1.42a40fe8.jpg",
     "static/media/JA-logo-3.png": "/portfolio/static/media/JA-logo-3.63ae1930.png",
     "static/media/Minesweeper.mp4": "/portfolio/static/media/Minesweeper.36c9ac74.mp4",
@@ -22,9 +22,9 @@
     "static/media/close.svg": "/portfolio/static/media/close.5d8fa210.svg"
   },
   "entrypoints": [
-    "static/js/runtime-main.62348e24.js",
-    "static/js/2.960ac3f8.chunk.js",
-    "static/css/main.d6e7fd11.chunk.css",
-    "static/js/main.e30d978d.chunk.js"
+    "static/js/runtime-main.44087e9b.js",
+    "static/js/2.d590ed76.chunk.js",
+    "static/css/main.490a06fa.chunk.css",
+    "static/js/main.c30bb2eb.chunk.js"
   ]
 }
