@@ -1,23 +1,30 @@
 {
   "files": {
     "main.css": "/portfolio/static/css/main.d6e7fd11.chunk.css",
-    "main.js": "/portfolio/static/js/main.fd7c3c1f.chunk.js",
-    "main.js.map": "/portfolio/static/js/main.fd7c3c1f.chunk.js.map",
+    "main.js": "/portfolio/static/js/main.e30d978d.chunk.js",
+    "main.js.map": "/portfolio/static/js/main.e30d978d.chunk.js.map",
     "runtime-main.js": "/portfolio/static/js/runtime-main.62348e24.js",
     "runtime-main.js.map": "/portfolio/static/js/runtime-main.62348e24.js.map",
-    "static/js/2.0be4448e.chunk.js": "/portfolio/static/js/2.0be4448e.chunk.js",
-    "static/js/2.0be4448e.chunk.js.map": "/portfolio/static/js/2.0be4448e.chunk.js.map",
+    "static/js/2.960ac3f8.chunk.js": "/portfolio/static/js/2.960ac3f8.chunk.js",
+    "static/js/2.960ac3f8.chunk.js.map": "/portfolio/static/js/2.960ac3f8.chunk.js.map",
     "index.html": "/portfolio/index.html",
-    "precache-manifest.431aa9126442fe21575f92ca1d59b8ec.js": "/portfolio/precache-manifest.431aa9126442fe21575f92ca1d59b8ec.js",
+    "precache-manifest.25d14317ff8ac95e3a5e34bff8106b04.js": "/portfolio/precache-manifest.25d14317ff8ac95e3a5e34bff8106b04.js",
     "service-worker.js": "/portfolio/service-worker.js",
     "static/css/main.d6e7fd11.chunk.css.map": "/portfolio/static/css/main.d6e7fd11.chunk.css.map",
-    "static/js/2.0be4448e.chunk.js.LICENSE": "/portfolio/static/js/2.0be4448e.chunk.js.LICENSE",
-    "static/media/App.css": "/portfolio/static/media/Profilbild-min1.42a40fe8.jpg"
+    "static/js/2.960ac3f8.chunk.js.LICENSE": "/portfolio/static/js/2.960ac3f8.chunk.js.LICENSE",
+    "static/media/App.css": "/portfolio/static/media/Profilbild-min1.42a40fe8.jpg",
+    "static/media/JA-logo-3.png": "/portfolio/static/media/JA-logo-3.63ae1930.png",
+    "static/media/Minesweeper.mp4": "/portfolio/static/media/Minesweeper.36c9ac74.mp4",
+    "static/media/Pyramidsolitaire-final.mp4": "/portfolio/static/media/Pyramidsolitaire-final.b304513f.mp4",
+    "static/media/Resume.pdf": "/portfolio/static/media/Resume.3d390fc2.pdf",
+    "static/media/ShipGame.mp4": "/portfolio/static/media/ShipGame.0fa129c4.mp4",
+    "static/media/Spreadsheet-final.mp4": "/portfolio/static/media/Spreadsheet-final.f63a13b5.mp4",
+    "static/media/close.svg": "/portfolio/static/media/close.5d8fa210.svg"
   },
   "entrypoints": [
     "static/js/runtime-main.62348e24.js",
-    "static/js/2.0be4448e.chunk.js",
+    "static/js/2.960ac3f8.chunk.js",
     "static/css/main.d6e7fd11.chunk.css",
-    "static/js/main.fd7c3c1f.chunk.js"
+    "static/js/main.e30d978d.chunk.js"
   ]
 }
