@@ -14,10 +14,10 @@ function HomePage() {
                 Computer Science / Cognitive Psychology</p>
               <ul className='start-buttons'>
                 <li className='contact-button'>
-                  <a href='/Contact'>Contact</a>
+                  <a href='/portfolio/#Contact'>Contact</a>
                 </li>
                 <li className='contact-button'>
-                  <a href='/Resume'>View Resume</a>
+                  <a href='/portfolio/Resume'>View Resume</a>
                 </li>
               </ul>
             </div> 

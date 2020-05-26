@@ -1,6 +1,6 @@
 {
   "homepage": "http://jasperangl.github.io/portfolio",
-  "name": "projectreact",
+  "name": "portfolio",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
