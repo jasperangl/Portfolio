@@ -15,7 +15,7 @@ function NavBar() {
             <i  className='fa fa-bars'></i>
           </label>
           <ul className="navbar-ul" >
-            <li className="navbar-li"><a href='/'>Home</a></li>
+            <li className="navbar-li"><a href='/portfolio'>Home</a></li>
             <li className="navbar-li"><a htmlFor="chk" aria-hidden="true" href='/portfolio/#About'>About</a></li>
             <li className="navbar-li"><a htmlFor="chk" aria-hidden="true" href='/portfolio/#Projects'>Projects</a></li>
             <li className="navbar-li"><a htmlFor="chk" aria-hidden="true" href='/portfolio/#Contact'>Contact</a></li>

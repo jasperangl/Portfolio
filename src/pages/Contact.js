@@ -18,6 +18,10 @@ function Contact() {
 
   return (
     <div id='Contact' className='contact-div'>
+      <div className="Caption">
+        <h1>Get in touch</h1>
+        <h6>If you have any questions or would like to contact me, simply fill out the form below! I would love to chat!</h6>
+      </div>
       <form className="contact-form" onSubmit={sendEmail}>
         <input type="hidden" name="contact_number" />
         <label htmlFor='Name'>Name</label>

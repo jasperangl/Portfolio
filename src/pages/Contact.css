@@ -88,3 +88,25 @@ input[type=text], select, textarea {
     text-align: center;
     color: white;
   }
+
+  .Caption {
+    padding: 2% 10% 5% 0%;
+  }
+
+  .Caption h1 {
+    font-family: "Montserrat", sans-serif;
+    font-weight: 700;
+    font-size: 30px;
+    text-align: left;
+    color: white;
+    padding-bottom: 10px;
+  }
+
+  .Caption h6 {
+    font-family: "Montserrat", sans-serif;
+    font-weight: 400;
+    font-size: 15px;
+    text-align: left;
+    color: white;
+    opacity: 73%;
+  }
