@@ -2,6 +2,12 @@ import React, {useState} from 'react';
 import Modal from 'react-modal';
 import './Projects.css';
 import './About.css';
+import Close from '../images/close.svg';
+import Spreadsheet from "../images/Spreadsheet-final.mp4";
+import ShipGame from "../images/ShipGame.mp4";
+import PyramidSolitaire from "../images/Pyramidsolitaire-final.mp4";
+import Minesweeper from "../images/Minesweeper.mp4";
+
 
 Modal.setAppElement('#root')
 
@@ -49,7 +55,7 @@ const Projects = () => {
                     }>
                     <video class='preview'src={clipName} controls='true'></video>
                     <div>
-                        <img onClick={() => setModalIsOpen(false)} className='close' src='images/close.svg' alt=''></img>
+                        <img onClick={() => setModalIsOpen(false)} className='close' src={Close} alt=''></img>
                     </div>
                 </Modal>
 
@@ -65,7 +71,7 @@ const Projects = () => {
                         </p>
                         <ul>
                             <li className="project-button"><a target='_blank' rel="noopener noreferrer" href="https://github.com/jasperangl/Spreadsheet">Source Code</a></li>
-                            <li className="project-button"><div onClick={function() { setName("images/Spreadsheet-final.mp4"); setModalMode(true)}}>Video Presentation</div></li>
+                            <li className="project-button"><div onClick={function() { setName(Spreadsheet); setModalMode(true)}}>Video Presentation</div></li>
                         </ul>
                         <h6 className='project-language'>Java</h6>
                         <h6 className='project-date'>Nov - Dec 2019</h6>
@@ -82,7 +88,7 @@ const Projects = () => {
                         </p>
                         <ul >
                             <li className="project-button"><a target='_blank' rel="noopener noreferrer" href="https://github.com/jasperangl/10-Bullets-Game">Source Code</a></li>
-                            <li className="project-button"><div  onClick={function() { setName("images/ShipGame.mp4"); setModalMode(true)}}>Video Presentation</div></li>
+                            <li className="project-button"><div  onClick={function() { setName(ShipGame); setModalMode(true)}}>Video Presentation</div></li>
                         </ul>
                         <h6 className='project-language'>Java</h6>
                         <h6 className='project-date'>Feb 2019</h6>
@@ -113,7 +119,7 @@ const Projects = () => {
                         <div className='project - bottom'>
                             <ul>
                                 <li className="project-button"><a target='_blank' rel="noopener noreferrer" href="https://github.com/jasperangl/Pyramid-Solitaire">Source Code</a></li>
-                                <li className="project-button"><div onClick={function() { setName("images/Pyramidsolitaire-final.mp4"); setModalMode(true)}}>Video Presentation</div></li>
+                                <li className="project-button"><div onClick={function() { setName(PyramidSolitaire); setModalMode(true)}}>Video Presentation</div></li>
                             </ul>
                             <h6 className='project-language'>Java</h6>
                             <h6 className='project-date'> Oct - Nov 2019</h6>
@@ -130,7 +136,7 @@ const Projects = () => {
                         <div className='project-bottom'>
                             <ul>
                                 <li className="project-button"><a target='_blank' rel="noopener noreferrer" href="https://github.com/jasperangl/Minesweeper">Source Code</a></li>
-                                <li className="project-button"><div onClick={function() { setName("images/Minesweeper.mp4"); setModalMode(true)}}>Video Presentation</div></li>
+                                <li className="project-button"><div onClick={function() { setName(Minesweeper); setModalMode(true)}}>Video Presentation</div></li>
                             </ul>
                             <h6 className='project-language'>Java</h6>
                             <h6 className='project-date'>March 2019</h6>

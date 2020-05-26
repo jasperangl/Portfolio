@@ -1,5 +1,6 @@
 import React from 'react';
 import './NavBar.css';
+import Logo from "../images/JA-logo-3.png";
 
 function NavBar() {
     return(
@@ -7,7 +8,7 @@ function NavBar() {
     <header className="navbar-header">
      <link rel="stylesheet" 
         href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"/>
-        <img className='logo' src="images/JA-Logo-3.png" alt='logo'/> 
+        <img className='logo' src={Logo} alt='logo'/> 
         <nav>
           <input type='checkbox' id="chk"></input>
           <label htmlFor='chk' className='open-menu-btn'>
