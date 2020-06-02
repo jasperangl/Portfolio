@@ -68,7 +68,7 @@
     color: var(--theme-color);
 }
 
-#chk {
+#chk, #chk2, #chk3, #chk4 {
     position: absolute;
     visibility: hidden;
 }
@@ -103,9 +103,17 @@
     }
 
     #chk:checked ~ .navbar-ul {
-        left: 0;
+        left: 0vh;
     }
-
+    #chk2:checked ~ .navbar-ul {
+        left: 100vh;
+    }
+    #chk3:checked ~ .navbar-ul {
+        left: 100vh;
+    }
+    #chk4:checked ~ .navbar-ul {
+        left: 100vh;
+    }
     
 
   }

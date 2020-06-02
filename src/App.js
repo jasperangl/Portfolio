@@ -14,7 +14,7 @@ import './components/Footer.css'
 class App extends Component {
   render() {
     return ( 
-      <Router basename="/portfolio">
+      <Router>
         <div className="App">
           <NavBar />
           <div id="page-body">

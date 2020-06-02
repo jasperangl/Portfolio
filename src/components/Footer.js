@@ -35,11 +35,11 @@ const Footer = () => {
                 <div>
                     <h2> Jasper<span> Angl</span></h2>
                     <p className="menu">
-                    <a href="/portfolio/"> Home </a> | 
-                    <a href="/portfolio/#About">  About </a> | 
-                    <a href="/portfolio/#Projects">  Projects </a> | 
-                    <a href="/portfolio/#Contact">  Contact </a> | 
-                    <a href="/portfolio/Resume">  Resume </a> 
+                    <a href="/"> Home </a> | 
+                    <a href="/#About">  About </a> | 
+                    <a href="/#Projects">  Projects </a> | 
+                    <a href="/#Contact">  Contact </a> | 
+                    <a href="/Resume">  Resume </a> 
                     
                     </p>
                 </div>

@@ -3,7 +3,7 @@
 
 /* Style inputs with type="text", select elements and textareas */
 input[type=text], select, textarea {
-    width: 80%; /* Full width */
+    width: 70%; /* Full width */
     padding: 12px; /* Some padding */ 
     border: 1px solid #ccc; /* Gray border */
     border-radius: 6px; /* Rounded borders */
@@ -12,6 +12,13 @@ input[type=text], select, textarea {
     margin-bottom: 20px; /* Bottom margin */
     resize: vertical /* Allow the user to vertically resize the textarea (not horizontally) */
   }
+
+  @media (max-width: 1000px) {
+    input[type=text], select, textarea {
+      width: 90%;
+    }
+  }
+
   
   /* Style the submit button with a specific background color etc */
   input[type=submit] {
@@ -36,7 +43,7 @@ input[type=text], select, textarea {
   }
 
   .contact-div {
-    padding: 3% 10% 3% 10%;
+    padding: 3% 10% 6% 10%;
     background-color: var(--theme-color);
   }
 
@@ -107,6 +114,5 @@ input[type=text], select, textarea {
     font-weight: 400;
     font-size: 15px;
     text-align: left;
-    color: white;
-    opacity: 73%;
+    color: rgba(255, 255, 255, 0.83);
   }
