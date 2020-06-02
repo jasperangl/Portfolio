@@ -102,7 +102,7 @@ const Projects = () => {
                         </p>
                         <div className='project-bottom'>
                             <ul>
-                <li className="project-button"><a href="/Recipes">Live Version</a></li>
+                <li className="project-button"><a href="/portfolio/Recipes">Live Version</a></li>
                             </ul>
                             <h6 className='project-language'>Javascript</h6>
                             <h6 className='project-date'>Feb 2020</h6>

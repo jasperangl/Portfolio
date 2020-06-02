@@ -13,8 +13,10 @@ import './components/Footer.css'
 
 class App extends Component {
   render() {
+    console.log(this.state);
+    console.log("This is the process.env", process.env.PUBLIC_URL)
     return ( 
-      <Router basename={process.env.PUBLIC_URL}>
+      <Router basename='/portfolio/'>
         <div className="App">
           <NavBar />
           <div id="page-body">
