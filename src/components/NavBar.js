@@ -1,6 +1,8 @@
 import React from 'react';
 import './NavBar.css';
 import Logo from "../images/JA-logo-3.png";
+import { Link
+} from 'react-router-dom';
 
 function NavBar() {
     return(
@@ -21,7 +23,7 @@ function NavBar() {
           </label>
           
           <ul className="navbar-ul" >
-            <li className="navbar-li"><a href='/portfolio/'>Home</a></li>
+            <li className="navbar-li"><Link to='/'>Home</Link></li>
             <li className="navbar-li"><a htmlFor="chk" aria-hidden="true" href='/portfolio/#About'>About</a></li>
             <li className="navbar-li"><a htmlFor="chk" aria-hidden="true" href='/portfolio/#Projects'>Projects</a></li>
             <li className="navbar-li"><a htmlFor="chk" aria-hidden="true" href='/portfolio/#Contact'>Contact</a></li>
