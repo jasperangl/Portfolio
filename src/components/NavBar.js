@@ -26,6 +26,7 @@ function NavBar() {
             <li className="navbar-li"><Link to='/'>Home</Link></li>
             <li className="navbar-li"><a htmlFor="chk" aria-hidden="true" href='/portfolio/#About'>About</a></li>
             <li className="navbar-li"><a htmlFor="chk" aria-hidden="true" href='/portfolio/#Projects'>Projects</a></li>
+            <li className="navbar-li"><a htmlFor="chk" aria-hidden="true" href='/portfolio/#Skills'>Skills</a></li>
             <li className="navbar-li"><a htmlFor="chk" aria-hidden="true" href='/portfolio/#Contact'>Contact</a></li>
             <label htmlFor="chk" className="close-btn" aria-label="Close">
               <span aria-hidden="true">&times;</span>

@@ -40,8 +40,9 @@ const Footer = () => {
                     <a href="/portfolio/"> Home </a> | 
                     <a href="/portfolio/#About">  About </a> | 
                     <a href="/portfolio/#Projects">  Projects </a> | 
+                    <a href="/portfolio/#Skills">  Skills </a> | 
                     <a href="/portfolio/#Contact">  Contact </a> | 
-                    <Link to='/Resume'>Resume</Link> 
+                    <a href="/Resume">Resume</a> 
                     
                     </p>
                 </div>

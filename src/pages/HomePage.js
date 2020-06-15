@@ -3,6 +3,8 @@ import './HomePage.css';
 import About from './About.js';
 import Projects from './Projects.js';
 import Contact from './Contact';
+import Skills from './Skills.js';
+
 function HomePage() {
   
     return(
@@ -17,13 +19,14 @@ function HomePage() {
                   <a href='/portfolio/#Contact'>Contact</a>
                 </li>
                 <li className='contact-button'>
-                  <a href='/portfolio/Resume'>View Resume</a>
+                  <a href='/Resume'>View Resume</a>
                 </li>
               </ul>
             </div> 
         </section>
         <About/>
         <Projects/>
+        <Skills/>
         <Contact/>
       </div>    
 

@@ -35,6 +35,10 @@ input[type=text], select, textarea {
     background-color: rgb(35, 122, 118);
     transition: 0.5s;
   }
+
+  input[type=submit]::after {
+    opacity: 10%;
+  }
   
   /* Add a background color and some padding around the form */
   .container {

@@ -1,13 +1,15 @@
 import React from 'react';
 import emailjs from 'emailjs-com';
-
 import './Contact.css';
+
+
+
 
 function Contact() {
 
   function sendEmail(e) {
     e.preventDefault();
-
+  
     emailjs.sendForm('jasper_angl', 'template_5MP926Qs', e.target, 'user_hnJv4ujOoKAmqrHqRDKwk')
       .then((result) => {
           console.log(result.text);
@@ -28,7 +30,7 @@ function Contact() {
         <input type="text" id='Name'name="user_name" placeholder='Your full name..' />
         <label>Message</label>
         <textarea id="subject" name="subject" placeholder="Write something.." />
-        <input type="submit" value="Send"/>
+        <input type="submit" value="Send"></input>
       </form>
     </div>
   );
