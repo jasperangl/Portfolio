@@ -1,23 +1,23 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "5cdbc7d7fdab3e58ad28566f428e18e0",
+    "revision": "0312441a891daac7d4bc7bde2872da00",
     "url": "/portfolio/index.html"
   },
   {
-    "revision": "ff50ce7a2c079926b410",
-    "url": "/portfolio/static/css/main.fdafe49e.chunk.css"
+    "revision": "5c428557a44e90bab33c",
+    "url": "/portfolio/static/css/main.0818915e.chunk.css"
   },
   {
-    "revision": "4dbfc58734fe3220e2db",
-    "url": "/portfolio/static/js/2.eeff1843.chunk.js"
+    "revision": "82fb2694b931a4c6a3b4",
+    "url": "/portfolio/static/js/2.6076b8a9.chunk.js"
   },
   {
     "revision": "21f38193c3caf91fe32157540d33cdde",
-    "url": "/portfolio/static/js/2.eeff1843.chunk.js.LICENSE"
+    "url": "/portfolio/static/js/2.6076b8a9.chunk.js.LICENSE"
   },
   {
-    "revision": "ff50ce7a2c079926b410",
-    "url": "/portfolio/static/js/main.cc34620f.chunk.js"
+    "revision": "5c428557a44e90bab33c",
+    "url": "/portfolio/static/js/main.d4987f1e.chunk.js"
   },
   {
     "revision": "0d98471f6c3b69ca4251",
@@ -36,6 +36,10 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/portfolio/static/media/Minesweeper.36c9ac74.mp4"
   },
   {
+    "revision": "9bf92939fe7328f40b4891dd7bee53f3",
+    "url": "/portfolio/static/media/MinesweeperImg.9bf92939.jpg"
+  },
+  {
     "revision": "42a40fe8e50bdab7bea3bc7f4c156071",
     "url": "/portfolio/static/media/Profilbild-min1.42a40fe8.jpg"
   },
@@ -44,12 +48,32 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/portfolio/static/media/Pyramidsolitaire-final.b304513f.mp4"
   },
   {
+    "revision": "36ac1623477e1cf8c347f6675a198d9a",
+    "url": "/portfolio/static/media/RecipeImg.36ac1623.png"
+  },
+  {
     "revision": "3d390fc2ae1f40733da5bfe52acbbce0",
     "url": "/portfolio/static/media/Resume.3d390fc2.pdf"
   },
   {
     "revision": "0fa129c448e4562c012de5e1599b745e",
     "url": "/portfolio/static/media/ShipGame.0fa129c4.mp4"
+  },
+  {
+    "revision": "3e8a8825ceb26f177c2d3061b41b2d76",
+    "url": "/portfolio/static/media/ShipGameImg2.3e8a8825.jpg"
+  },
+  {
+    "revision": "53f810ef785260d1ed66819b28a7204c",
+    "url": "/portfolio/static/media/Snake PvP Paper.53f810ef.pdf"
+  },
+  {
+    "revision": "3a2fd7343e7b1f6fa67de9abf6992688",
+    "url": "/portfolio/static/media/Snake-PvP.3a2fd734.jpg"
+  },
+  {
+    "revision": "4899dd102267218d546f1b48e952343a",
+    "url": "/portfolio/static/media/Spreadsheet-final.4899dd10.jpg"
   },
   {
     "revision": "f63a13b5183d0d4cb7cab166b72de3bd",
