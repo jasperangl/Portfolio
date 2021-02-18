@@ -24,7 +24,7 @@ class App extends Component {
               <Route path="/Recipes" component={Recipes} exact />
               <Route path="/" component={HomePage} exact />
               <Route path="/Resume" component={Resume} exact />
-              <Route path="/projects/SnakeAI" component={SnakeAI} exact />
+              <Route path="/portfolio/SnakeAI" component={SnakeAI} exact />
           </div>
           <Footer />
         </div>
