@@ -1,0 +1,8 @@
+How to commit React App to GitHub:
+
+1. git status
+2. git add .
+3. git status
+4. git commit -m "..."
+5. npm run deploy
+6. git push -u origin master

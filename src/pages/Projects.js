@@ -73,7 +73,7 @@ const Projects = () => {
                             symbol={"fa fa-gamepad"}  
                             name={"PvP Snake AI"} 
                             description={"A PvP snake game trained, using 3 reinforcement learning algorithms: Q-Learning, Deep Q-Learning and Advantage Actor-Critc."}
-                            link={"/projects/SnakeAI"}
+                            link={"/portfolio/SnakeAI"}
                             img={SnakeImg}
                             language={"Python"} 
                             date={"Nov - Dec 2020"}/>
