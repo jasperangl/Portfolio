@@ -107,7 +107,7 @@ const Projects = () => {
                             name={"Recipe Database"} 
                             description={"A small javascript projects on this website that allows you to search through a seemingly infinite amount of different recipes."}
                             img={RecipeImg}
-                            link={"/Recipes"}
+                            link={"portfolio/Recipes"}
                             language={"JavaScript"} 
                             date={"Feb 2020"}/>
                         }

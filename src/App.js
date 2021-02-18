@@ -12,23 +12,24 @@ import Resume from './components/Resume';
 import SnakeAI from './pages/project_details/project_detail'
 import './App.css';
 import './components/Footer.css'
+import Switch from 'react-bootstrap/esm/Switch';
 
 class App extends Component {
   render() {
     return ( 
-      <Router basename='/portfolio'>
         <div className="App">
           <NavBar />
           <div id="page-body">
+              <Switch>
+                <Route exact path="/portfolio/Recipes" component={Recipes} exact />
+                <Route exact path="/" component={HomePage} exact />
+                <Route exact path="/Resume" component={Resume} exact />
+                <Route exact path="/portfolio/SnakeAI" component={SnakeAI} exact />
+              </Switch>
               
-              <Route path="/portfolio/Recipes" component={Recipes} exact />
-              <Route path="/" component={HomePage} exact />
-              <Route path="/Resume" component={Resume} exact />
-              <Route path="/portfolio/SnakeAI" component={SnakeAI} exact />
           </div>
           <Footer />
         </div>
-      </Router>
     );
   }
 }

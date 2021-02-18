@@ -1,2 +1,2 @@
 # https://www.robotstxt.org/robotstxt.html
-User-agent: *
+Sitemap: http://www.jasperangl.com/sitemap.txt
