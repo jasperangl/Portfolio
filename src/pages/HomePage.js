@@ -19,7 +19,7 @@ function HomePage() {
                   <a href='/portfolio/#Contact'>Contact</a>
                 </li>
                 <li className='contact-button'>
-                  <a href='/Resume'>View Resume</a>
+                  <a target='_blank' rel='noopener noreferrer' href='/Resume'>View Resume</a>
                 </li>
               </ul>
             </div> 

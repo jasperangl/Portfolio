@@ -1,4 +1,4 @@
-import React from 'react';
+import React, {useState} from 'react';
 import emailjs from 'emailjs-com';
 import './Contact.css';
 
@@ -7,15 +7,30 @@ import './Contact.css';
 
 function Contact() {
 
+  const [name, setName] = useState('');
+  const [message, setMessage] = useState('');
+
+  const updateName = e => {
+    setName(e.target.value);
+}
+
+const updateMessage = e => {
+  setMessage(e.target.value);
+}
+
   function sendEmail(e) {
     e.preventDefault();
   
+    setName('');
+    setMessage('');
     emailjs.sendForm('jasper_angl', 'template_5MP926Qs', e.target, 'user_hnJv4ujOoKAmqrHqRDKwk')
       .then((result) => {
           console.log(result.text);
       }, (error) => {
           console.log(error.text);
       });
+
+      window.location = '/';
   }
 
   return (
@@ -27,9 +42,9 @@ function Contact() {
       <form className="contact-form" onSubmit={sendEmail}>
         <input type="hidden" name="contact_number" />
         <label htmlFor='Name'>Name</label>
-        <input type="text" id='Name'name="user_name" placeholder='Your full name..' />
+        <input type="text" id='Name' value={name} onChange={updateName} name="user_name" placeholder='Your full name..' />
         <label>Message</label>
-        <textarea id="subject" name="subject" placeholder="Write something.." />
+        <textarea id="subject" value={message} onChange={updateMessage} name="subject" placeholder="Write something.." />
         <input type="submit" value="Send"></input>
       </form>
     </div>

@@ -7,6 +7,14 @@ import Spreadsheet from "../images/Spreadsheet-final.mp4";
 import ShipGame from "../images/ShipGame.mp4";
 import PyramidSolitaire from "../images/Pyramidsolitaire-final.mp4";
 import Minesweeper from "../images/Minesweeper.mp4";
+import ProjectComp from './ProjectsComponent.js';
+import SnakeImg from '../images/Snake-PvP.png';
+import SpreadsheetImg from '../images/Spreadsheet-final.jpg';
+import ShipGameImg from '../images/ShipGameImg2.jpg';
+import RecipeImg from '../images/RecipeImg.png';
+import MinesweeperImg from '../images/MinesweeperImg.jpg';
+
+
 
 
 Modal.setAppElement('#root')
@@ -61,89 +69,82 @@ const Projects = () => {
 
                 <div className='project-content'>
                     <div className='box'>
-                        <div className='symbol'>
-                            <i className='fa fa-file-excel-o'/>
-                        </div>
-                        <h5 className='project-name'>Spreadsheet</h5>
-                        <p>A spreadsheet application similar to Excel 
-                            with the ability to store information in Cells and execute computations on them.
-                            Data can be saved, stored, opened or visualized in a graph. 
-                        </p>
-                        <ul>
-                            <li className="project-button"><a target='_blank' rel="noopener noreferrer" href="https://github.com/jasperangl/Spreadsheet">Source Code</a></li>
-                            <li className="project-button"><div onClick={function() { setName(Spreadsheet); setModalMode(true)}}>Video Presentation</div></li>
-                        </ul>
-                        <h6 className='project-language'>Java</h6>
-                        <h6 className='project-date'>Nov - Dec 2019</h6>
-                        
+                        {<ProjectComp
+                            symbol={"fa fa-gamepad"}  
+                            name={"PvP Snake AI"} 
+                            description={"A PvP snake game trained, using 3 reinforcement learning algorithms: Q-Learning, Deep Q-Learning and Advantage Actor-Critc."}
+                            link={"/projects/SnakeAI"}
+                            img={SnakeImg}
+                            language={"Python"} 
+                            date={"Nov - Dec 2020"}/>
+                        }   
                     </div>
                     <div className='box'>
-                        <div className='symbol'>
-                            <i className='fa fa-gamepad'/>
-                        </div>
-                        <h5 className='project-name'>Ships Game</h5>
-                        <p>First Java Game programmed using only recursion and no for-loops.
-                             Goal is to shoot as many flying ships as possible with the given bullets.
-
-                        </p>
-                        <ul >
-                            <li className="project-button"><a target='_blank' rel="noopener noreferrer" href="https://github.com/jasperangl/10-Bullets-Game">Source Code</a></li>
-                            <li className="project-button"><div  onClick={function() { setName(ShipGame); setModalMode(true)}}>Video Presentation</div></li>
-                        </ul>
-                        <h6 className='project-language'>Java</h6>
-                        <h6 className='project-date'>Feb 2019</h6>
+                        {<ProjectComp  
+                            symbol={'fa fa-file-excel-o'}
+                            name={"Spreadsheet"} 
+                            description={"A spreadsheet application similar to Excel with the ability to store information in Cells and execute computations on them. Data can be saved, stored, opened or visualized in a graph."}
+                            link={"https://github.com/jasperangl/Spreadsheet"} 
+                            img={SpreadsheetImg}
+                            language={"Java"} 
+                            date={"Nov - Dec 2019"}/>
+                        }
                     </div>
                     <div className='box'>
-                        <div className='symbol'>
-                            <i className='fa fa-database'/>
-                        </div>
-                        <h5 className='project-name'>Recipe Database</h5>
-                        <p>A small javascript projects on this website that allows you to search through a seemingly infinite amount of different recipes.
-                        </p>
-                        <div className='project-bottom'>
-                            <ul>
-                <li className="project-button"><a href="/Recipes">Live Version</a></li>
-                            </ul>
-                            <h6 className='project-language'>Javascript</h6>
-                            <h6 className='project-date'>Feb 2020</h6>
-                        </div>
+                        {<ProjectComp  
+                            symbol={'fa fa-gamepad'}
+                            name={"Ships Game"} 
+                            description={"First Java Game programmed using only recursion and no for-loops. The goal is to shoot as many flying ships as possible with the given bullets."}
+                            link={"https://github.com/jasperangl/10-Bullets-Game"} 
+                            img={ShipGameImg}
+                            language={"Java"} 
+                            date={"Feb 2019"}/>
+                        }
                     </div>
                     <div className='box'>
-                        <div className='symbol'>
-                            <i className='fa fa-gamepad'/>
-                        </div>
-                        <h5 className='project-name'>Pyramid Solitaire</h5>
-                        <p>A textual Java card game with two game modes, 
-                            sophisticated testing and applied MVC Pattern.
-                        </p>
-                        <div className='project - bottom'>
-                            <ul>
-                                <li className="project-button"><a target='_blank' rel="noopener noreferrer" href="https://github.com/jasperangl/Pyramid-Solitaire">Source Code</a></li>
-                                <li className="project-button"><div onClick={function() { setName(PyramidSolitaire); setModalMode(true)}}>Video Presentation</div></li>
-                            </ul>
-                            <h6 className='project-language'>Java</h6>
-                            <h6 className='project-date'> Oct - Nov 2019</h6>
-                        </div>
+                        {<ProjectComp  
+                            symbol={'fa fa-database'}
+                            name={"Recipe Database"} 
+                            description={"A small javascript projects on this website that allows you to search through a seemingly infinite amount of different recipes."}
+                            img={RecipeImg}
+                            link={"/Recipes"}
+                            language={"JavaScript"} 
+                            date={"Feb 2020"}/>
+                        }
                     </div>
                     <div className='box'>
-                        <div className='symbol'>
-                            <i className='fa fa-gamepad'/>
-                        </div>
-                        <h5 className='project-name'>Minesweeper</h5>
-                        <p>The classic Minesweeper game programmed with Java. 
-                            
-                        </p>
-                        <div className='project-bottom'>
-                            <ul>
-                                <li className="project-button"><a target='_blank' rel="noopener noreferrer" href="https://github.com/jasperangl/Minesweeper">Source Code</a></li>
-                                <li className="project-button"><div onClick={function() { setName(Minesweeper); setModalMode(true)}}>Video Presentation</div></li>
-                            </ul>
-                            <h6 className='project-language'>Java</h6>
-                            <h6 className='project-date'>March 2019</h6>
-                        </div>
+                        {<ProjectComp  
+                            symbol={'fa fa-gamepad'}
+                            name={"Minesweeper"} 
+                            description={"The classic Minesweeper game programmed with Java."}
+                            img={MinesweeperImg}
+                            link={"https://github.com/jasperangl/Minesweeper"}
+                            language={"Java"} 
+                            date={"March 2019"}/>
+                        }
                     </div>
                     
-                    <div className='box'>
+                    {/** Pyramid Solitaire
+                     * <div className='box'>
+                            <div className='symbol'>
+                                <i className='fa fa-gamepad'/>
+                            </div>
+                            <h5 className='project-name'>Pyramid Solitaire</h5>
+                            <p>A textual Java card game with two game modes, 
+                                sophisticated testing and applied MVC Pattern.
+                            </p>
+                            <div className='project - bottom'>
+                                <ul>
+                                    <li className="project-button"><a target='_blank' rel="noopener noreferrer" href="https://github.com/jasperangl/Pyramid-Solitaire">Source Code</a></li>
+                                    <li className="project-button"><div onClick={function() { setName(PyramidSolitaire); setModalMode(true)}}>Video Presentation</div></li>
+                                </ul>
+                                <h6 className='project-language'>Java</h6>
+                                <h6 className='project-date'> Oct - Nov 2019</h6>
+                            </div>
+                        </div>
+                    */}
+                    {/** Craigslist Housing Scraper
+                     * <div className='box'>
                         <div className='symbol'>
                             <i className='fa fa fa-search'/>
                         </div>
@@ -158,6 +159,9 @@ const Projects = () => {
                             <h6 className='project-date'>Jan 2020</h6>
                         </div>
                     </div>
+                     * 
+                     */}
+                    
                 </div>
             </div>            
         </section>

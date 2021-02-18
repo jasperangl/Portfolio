@@ -36,25 +36,22 @@
 }
 
 .projects .project-content .box{
-    min-width: 250px;
-    padding: 30px 5px;
-    background-color: white;
-    flex: 0 0 calc(35.33% - 40px);
-    max-width: calc(35.33% - 20px);
-    margin-right: 10px;
-    margin-left: 10px;
+    min-width: 230px;
+    flex: 0 0 calc(35.33% - 30px);
+    max-width: calc(35.33% - 100px);
+    max-width: 380px;
+    margin-right: 1%;
+    margin-left: 1%;
     margin-bottom: 30px;
-    border: 1px solid #eeeeee;
-    text-align: center;
-    border-radius: 5px;
-    
+    text-align: center; 
 }
 
+/*
 .projects .project-content .box:hover{
     box-shadow: 0px 5px 15px var(--theme-color);
     transition: 0.5s ease;
 }
-
+*/
 
 
 .projects .project-content .box h5{
@@ -100,20 +97,19 @@
 
 .projects .project-content .box .project-button {
     font-family: "Montserrat", sans-serif;
-    display: flex;
-    flex-direction: column;
     background-color: white;
     font-weight: 500;
     font-size: 10px;
-    border-radius: 8px;
-    border: 1px solid var(--theme-color);
+    border-radius: 6px;
+    border: 0px solid var(--theme-color);
     cursor: pointer;
  }
 
  .projects .project-content .box .project-button:hover{
-     background-color: var(--theme-color);
-     border: 1px solid var(--theme-color);
-     transition-duration: 0.3s; 
+    transition-duration: 0.3s;  
+    background-color: var(--theme-color);
+    border: 0px solid var(--theme-color);
+     
 }
 
 .projects .project-content .box .project-button a, .project-button div{
@@ -126,7 +122,7 @@
 
  .projects .project-content .box .project-button a:hover, .project-button div:hover {
     color: white;
-    transition-duration: 0.3s;
+    transition-duration: 0.1s;
  }
 
  .ship-game {
@@ -184,5 +180,56 @@
     .preview {
        max-width: 90%;
    }
+}
+
+/* Project items*/
+
+.projects .project-content .project {
+    position: relative;
+    text-align: center;
+    border-radius: 5px;
+}
+
+.projects .project-content .project .img-content{
+    opacity: 0;
+    position: absolute;
+    height: 99%;
+    width: 100%;
+    left: 0%;
+    top: 0%;
+    text-align: center;
+    background-color: rgba(58, 57, 57, 0.7);
+}
+
+.projects .project-content .project:hover .img-content{
+    transition-duration: 0.4s;
+    opacity: 1;
+}
+
+.projects .project .img-title {
+    color: white;
+    font-size: 20px;
+    padding: 10%;
+}
+
+.projects .project .img-button {
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    left: 0%;
+    top: 65%;
+}
+
+.projects .project .project-button {
+    padding: 3%;
+}
+
+.projects .project .project-language {
+    color: white;
+}
+
+img {
+    max-width: 100%;
+    max-height: 100%;
 }
 

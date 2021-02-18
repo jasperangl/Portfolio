@@ -1,7 +1,5 @@
 import React from 'react';
 import './Footer.css';
-import { Link
-} from 'react-router-dom';
 
 const Footer = () => {
 
@@ -42,7 +40,7 @@ const Footer = () => {
                     <a href="/portfolio/#Projects">  Projects </a> | 
                     <a href="/portfolio/#Skills">  Skills </a> | 
                     <a href="/portfolio/#Contact">  Contact </a> | 
-                    <a href="/Resume">Resume</a> 
+                    <a target='_blank' rel='noopener noreferrer' href="/Resume">Resume</a> 
                     
                     </p>
                 </div>

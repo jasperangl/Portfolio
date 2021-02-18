@@ -1,0 +1,238 @@
+import React, {useState, Component} from 'react';
+import './Projects.css';
+import './About.css';
+import './Skills.css';
+import Close from '../images/close.svg';
+
+class Skills extends Component{
+
+    constructor() {
+        super()
+        this.state={
+            Java:false,
+            Python: false,
+            JavaScript: false,
+            HTML: false,
+            CSS: false,
+            OPEN: false
+        }
+    }
+
+    operation(language) {
+
+        if (language == 'Java') {
+            this.setState({
+                Java : !this.state.Java,
+                Python: false,
+                JavaScript: false,
+                HTML: false,
+                CSS: false,
+                OPEN: true
+            })
+        }
+        if (language == 'Python') {
+            this.setState({
+                Java : false,
+                Python: !this.state.Python,
+                JavaScript: false,
+                HTML: false,
+                CSS: false,
+                OPEN: true
+            })
+        }
+        if (language == 'JavaScript') {
+            this.setState({
+                Java : false,
+                Python: false,
+                JavaScript: !this.state.JavaScript,
+                HTML: false,
+                CSS: false,
+                OPEN: true
+            })
+        }
+        if (language == 'HTML') {
+            this.setState({
+                Java : false,
+                Python: false,
+                JavaScript: false,
+                HTML: !this.state.HTML,
+                CSS: false,
+                OPEN: true
+            })
+        }
+        if (language == 'CSS') {
+            this.setState({
+                Java : false,
+                Python: false,
+                JavaScript: false,
+                HTML: false,
+                CSS: !this.state.CSS,
+                OPEN: true
+            })
+        }
+        if (language == 'Close') {
+            this.setState({
+                Java : false,
+                Python: false,
+                JavaScript: false,
+                HTML: false,
+                CSS: false,
+                OPEN: !this.state.OPEN
+            })
+        }
+    }
+    
+
+    render() {
+    return (
+        <div id='Skills' className='Skills'>
+            <link rel="stylesheet" 
+                href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"/>
+            <div className='container'>
+                <div className='section-title text-center'>
+                    <h1>My Skills</h1>
+                </div>
+                
+                <div className='skill-sections'>
+                    <div className='skill-section'>
+                        <h3>Langauges:</h3>
+                        <div className='skill-box'>
+                            <div className='skill-box-item' onClick={() => this.operation('Java')}>
+                                <div>Java</div>
+                                {
+                                    (this.state.Java && this.state.OPEN)?
+                                    <div><i class="fa fa-angle-double-up"></i></div>
+                                    :<i class="fa fa-angle-double-down"></i> 
+                                } 
+                            </div>
+                            <div className='skill-box-item' onClick={() => this.operation('Python')}>
+                                <div>Python</div>
+                                {
+                                    (this.state.Python && this.state.OPEN)?
+                                    <div><i class="fa fa-angle-double-up"></i></div>
+                                    :<i class="fa fa-angle-double-down"></i> 
+                                } 
+                            </div>
+                            <div className='skill-box-item' onClick={() => this.operation('JavaScript')}>
+                                <div>JavaScript</div>
+                                {
+                                    (this.state.JavaScript && this.state.OPEN)?
+                                    <div><i class="fa fa-angle-double-up"></i></div>
+                                    :<i class="fa fa-angle-double-down"></i> 
+                                }
+                            </div>
+                            <div className='skill-box-item' onClick={() => this.operation('HTML')}>
+                                <div>HTML</div>
+                                {
+                                    (this.state.HTML && this.state.OPEN)?
+                                    <div><i class="fa fa-angle-double-up"></i></div>
+                                    :<i class="fa fa-angle-double-down"></i> 
+                                }
+                            </div>
+                            <div className='skill-box-item' onClick={() => this.operation('CSS')}>
+                                <div>CSS</div>
+                                {
+                                    (this.state.CSS && this.state.OPEN)?
+                                    <div><i class="fa fa-angle-double-up"></i></div>
+                                    :<i class="fa fa-angle-double-down"></i> 
+                                }
+                            </div>
+                        </div>
+                        {
+                            this.state.Java?
+                                <div className='collapsible'>
+                                    <div className='close-div'>
+                                        <img onClick={() => this.operation('Close')} className='Close' src={Close} alt=''></img>
+                                    </div>
+                                    <div className='caption'>Java</div>
+                                    <div className='info-text'>Like most university students I gained most of my coding experience through Java. 
+                                        It taught me object-oriented programming and the object-oriented Design principles such as 
+                                        Inheritance, Polymorphism, Abstraction and Encapsulation. Through projects like the <span>Pyramid Solitaire Game</span> 
+                                        I gained meaningful experience in OOD concepts as well as in-depth testing habits with unit tests using the 
+                                        JUnit Library. My <span>Spreadsheet</span> project expanded on that by working in cooperation with a partner which required 
+                                        good communication and collaboration to remain productive.  </div>
+                                </div>
+                            :this.state.Python?
+                                <div className='collapsible'>
+                                    <div className='close-div'>
+                                        <img onClick={() => this.operation('Close')} className='Close' src={Close} alt=''></img>
+                                    </div>
+                                    <div className='caption'>Python</div>
+                                    <div className='info-text'>Like most university students I gained most of my coding experience through Java. 
+                                        It taught me object-oriented programming and the object-oriented Design principles such as 
+                                        Inheritance, Polymorphism, Abstraction and Encapsulation. Through projects like the <span>Pyramid Solitaire Game</span> 
+                                        I gained meaningful experience in OOD concepts as well as in-depth testing habits with unit tests using the 
+                                        JUnit Library. My <span>Spreadsheet</span> project expanded on that by working in cooperation with a partner which required 
+                                        good communication and collaboration to remain productive.  </div>
+                                </div>
+                            :this.state.JavaScript?
+                                <div className='collapsible'>
+                                    <div className='close-div'>
+                                        <img onClick={() => this.operation('Close')} className='Close' src={Close} alt=''></img>
+                                    </div>
+                                    <div className='caption'>JavaScript</div>
+                                    <div className='info-text'>Like most university students I gained most of my coding experience through Java. 
+                                        It taught me object-oriented programming and the object-oriented Design principles such as 
+                                        Inheritance, Polymorphism, Abstraction and Encapsulation. Through projects like the <span>Pyramid Solitaire Game</span> 
+                                        I gained meaningful experience in OOD concepts as well as in-depth testing habits with unit tests using the 
+                                        JUnit Library. My <span>Spreadsheet</span> project expanded on that by working in cooperation with a partner which required 
+                                        good communication and collaboration to remain productive.  </div>
+                                </div>
+                            :this.state.HTML?
+                                <div className='collapsible'>
+                                    <div className='close-div'>
+                                        <img onClick={() => this.operation('Close')} className='Close' src={Close} alt=''></img>
+                                    </div>
+                                    <div className='caption'>HTML</div>
+                                    <div className='info-text'>Like most university students I gained most of my coding experience through Java. 
+                                        It taught me object-oriented programming and the object-oriented Design principles such as 
+                                        Inheritance, Polymorphism, Abstraction and Encapsulation. Through projects like the <span>Pyramid Solitaire Game</span> 
+                                        I gained meaningful experience in OOD concepts as well as in-depth testing habits with unit tests using the 
+                                        JUnit Library. My <span>Spreadsheet</span> project expanded on that by working in cooperation with a partner which required 
+                                        good communication and collaboration to remain productive.  </div>
+                                </div>  
+                            :this.state.CSS?
+                                <div className='collapsible'>
+                                    <div className='close-div'>
+                                        <img onClick={() => this.operation('Close')} className='Close' src={Close} alt=''></img>
+                                    </div>
+                                    <div className='caption'>CSS</div>
+                                    <div className='info-text'>Like most university students I gained most of my coding experience through Java. 
+                                        It taught me object-oriented programming and the object-oriented Design principles such as 
+                                        Inheritance, Polymorphism, Abstraction and Encapsulation. Through projects like the <span>Pyramid Solitaire Game</span> 
+                                        I gained meaningful experience in OOD concepts as well as in-depth testing habits with unit tests using the 
+                                        JUnit Library. My <span>Spreadsheet</span> project expanded on that by working in cooperation with a partner which required 
+                                        good communication and collaboration to remain productive.  </div>
+                                </div>  
+                            :null
+                        }
+                        
+                    </div>
+                    <div className='skill-section'>
+                        <h3>Libraries / Frameworks:</h3>
+                        <div className='skill-box'>
+                            <div className='skill-box-item'>ReactJS</div>
+                            <div className='skill-box-item'>Pandas</div>
+                            <div className='skill-box-item'>scikit-learn</div>
+                            <div className='skill-box-item'>NumPy</div>
+                        </div>
+                    </div>
+                    <div className='skill-section'>
+                        <h3>Additionals:</h3>
+                        <div className='skill-box'>
+                            <div className='skill-box-item'>Git</div>
+                            <div className='skill-box-item'>Adobe Lightroom</div>
+                            <div className='skill-box-item'>Adobe Premiere Pro</div>
+                            <div className='skill-box-item'>Affinity Photo</div>
+                        </div>
+                       
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    )
+}
+}
+
+export default Skills;

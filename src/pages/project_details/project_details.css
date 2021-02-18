@@ -1,0 +1,135 @@
+@import url('https://fonts.googleapis.com/css2?family=Karla&display=swap');
+
+.project-container {
+    padding: 3%;
+    background-color: whitesmoke;
+    font-family: 'Karla', sans-serif;
+}
+
+.row1 {
+    max-width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    
+  }
+  .col {
+    margin-right: 1%;
+    margin-left: 1%;
+    margin-bottom: 30px;
+    text-align: center;
+    max-width: 500px;
+  }
+
+  .col .project-intro {
+    min-width: 150px;
+    flex: 0 0 calc(60.33% - 10px);
+    
+  }
+
+  .col img {
+    min-width: 150px;
+    flex: 0 0 calc(60.33% - 10px);
+    max-width: 75%;
+  }
+
+  .project-container ul {
+    list-style-type: none;
+    overflow: hidden;
+    justify-content: space-between;
+    padding-top: 5px;
+    padding-bottom: 40px;  
+  }
+
+  .project-intro {
+    height: 100%;
+    width: 100%;
+    padding-top: 10%;
+    text-align: center;
+  }
+
+  .project-intro h1 {
+      text-transform: capitalize;
+      font-family: sans-serif;
+      font-size: 65px;
+  }
+
+  .row2 {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: no-wrap;
+    width: 100%;
+    background-color: #ffffff;
+    padding: 3% 3%;
+  }
+  
+
+  .row2 .col1 {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    margin-right: 2%;
+    text-align: center;
+    min-width: 260px;
+    padding: 0% 1%;
+    
+  }
+  .row2 .col2 {
+    max-width: 100%;
+    text-align: center;
+    padding-right: 2%;
+    
+  }
+
+  .row2 li {
+      font-size: 20px;
+      padding: 4px;
+  }
+
+  .row2 li a {
+      text-decoration: none;
+      color: rgb(2, 2, 204);
+  }
+
+  .row2 h3 {
+      font-size: 20px;
+      color: rgb(97, 97, 97);
+      text-transform: uppercase;
+  }
+
+
+  .project-intro p{
+      color:black;
+  }
+
+  .description p {
+      color:black;
+      padding: 10px 2%;
+  }
+
+  @media screen and (max-width: 510px) {
+    .project-intro h1 {
+        font-size: 38px;
+    }
+}
+    
+    
+  @media screen and (max-width: 800px) {
+        .row2 {
+            flex-wrap: wrap;
+            width: 100%;
+            padding: 3% 5%;
+            justify-content: space-around;
+          }
+          
+          .row2 .col1 {
+            display: flex;
+            justify-content: space-around;
+            flex-grow: 1;
+            max-width: 100%;
+            margin-right: 0px;
+            
+          }
+    }
+
+  

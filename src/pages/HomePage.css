@@ -67,6 +67,7 @@
     font-size: calc(60% + 1vw);;
     border-radius: 8px;
     border: 2px solid var(--theme-color);
+    background-color: rgba(0, 0, 0, 0.15);
  }
 
  .contact-button:hover{
