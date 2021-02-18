@@ -21,10 +21,10 @@ class App extends Component {
           <NavBar />
           <div id="page-body">
               
-              <Route path="/Recipes" component={Recipes} exact />
+              <Route path="/?/portfolio/Recipes" component={Recipes} exact />
               <Route path="/" component={HomePage} exact />
               <Route path="/Resume" component={Resume} exact />
-              <Route path="/portfolio/SnakeAI" component={SnakeAI} exact />
+              <Route path="/?/portfolio/SnakeAI" component={SnakeAI} exact />
           </div>
           <Footer />
         </div>
