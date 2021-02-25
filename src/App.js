@@ -13,7 +13,7 @@ import './components/Footer.css'
 class App extends Component {
   render() {
     return ( 
-      <HashRouter basename='/portfolio'>
+      <HashRouter basename='/'>
         <div className="App">
           <NavBar />
           <div id="page-body">

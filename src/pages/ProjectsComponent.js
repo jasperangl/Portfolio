@@ -1,4 +1,6 @@
 import React, {useState} from 'react';
+import {Link } from "react-router-dom";
+
 import Modal from 'react-modal';
 import './Projects.css';
 import './About.css';
@@ -55,7 +57,7 @@ const ProjectComp = ({symbol,name,description,link, language, date, video, img})
                 <div className='img-content'>
                     <div className='img-title'>{name}</div>
                     <div className='img-button'> 
-                        <button className="project-button"><a target='_blank' rel="noopener noreferrer" href={link}>Learn More</a></button>
+                        <button className="project-button"><Link to={link}>Learn More</Link></button>
                     </div>
                     
                 </div>
