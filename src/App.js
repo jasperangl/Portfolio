@@ -1,8 +1,5 @@
 import React, { Component } from 'react';
-import {
-  BrowserRouter as Router,
-  Route
-} from 'react-router-dom';
+import {HashRouter, Route} from 'react-router-dom';
 
 import HomePage from './pages/HomePage';
 import Recipes from './pages/Recipe';
@@ -16,19 +13,19 @@ import './components/Footer.css'
 class App extends Component {
   render() {
     return ( 
-      <Router basename='/portfolio'>
+      <HashRouter basename='/portfolio'>
         <div className="App">
           <NavBar />
           <div id="page-body">
               
-              <Route path="/portfolio/Recipes" component={Recipes} exact />
+              <Route path="/Recipes" component={Recipes} exact />
               <Route path="/" component={HomePage} exact />
               <Route path="/Resume" component={Resume} exact />
-              <Route path="/portfolio/SnakeAI" component={SnakeAI} exact />
+              <Route path="/SnakeAI" component={SnakeAI} exact />
           </div>
           <Footer />
         </div>
-      </Router>
+      </HashRouter>
     );
   }
 }

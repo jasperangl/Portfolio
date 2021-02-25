@@ -73,7 +73,7 @@ const Projects = () => {
                             symbol={"fa fa-gamepad"}  
                             name={"PvP Snake AI"} 
                             description={"A PvP snake game trained, using 3 reinforcement learning algorithms: Q-Learning, Deep Q-Learning and Advantage Actor-Critc."}
-                            link={"/portfolio/SnakeAI"}
+                            link={"/SnakeAI"}
                             img={SnakeImg}
                             language={"Python"} 
                             date={"Nov - Dec 2020"}/>
@@ -107,7 +107,7 @@ const Projects = () => {
                             name={"Recipe Database"} 
                             description={"A small javascript projects on this website that allows you to search through a seemingly infinite amount of different recipes."}
                             img={RecipeImg}
-                            link={"portfolio/Recipes"}
+                            link={"/Recipes"}
                             language={"JavaScript"} 
                             date={"Feb 2020"}/>
                         }
